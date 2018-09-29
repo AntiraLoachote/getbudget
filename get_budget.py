@@ -28,30 +28,3 @@ def get_budget(first_day, last_day):
         elif range_of_month == 0:
             budget = (budgets.get(first_day.month)/round(30, 2))*range_of_day
             return round(budget, 2)
-
-
-        # if last_day.month - first_day.month == 1:
-        #     budget_of_month_of_first = budgets.get(first_day.month)
-
-        #     budget_month_of_last = budgets.get(last_day.month)
-        #     day_of_month_of_last = day_of_month.get(last_day.month)
-
-        #     budget_per_day_of_last = (budget_month_of_last/round(day_of_month_of_last, 2))
-        #     return round(budget_of_month_of_first + budget_per_day_of_last*last_day.day, 2)
-
-        # elif last_day.month - first_day.month == 2:
-        #     budget_of_month_of_first = budgets.get(first_day.month)
-        #     budget_of_month_of_seccond = budgets.get(first_day.month + 1)
-
-        #     budget_month_of_last = budgets.get(last_day.month)
-        #     day_of_month_of_last = day_of_month.get(last_day.month)
-
-        #     budget_per_day_of_last = (budget_month_of_last/round(day_of_month_of_last, 2))
-        #     return round(
-        #         budget_of_month_of_first +
-        #         budget_of_month_of_seccond +
-        #         budget_per_day_of_last*last_day.day, 2
-        #         )
-        # elif last_day.month - first_day.month == 0:
-        #     budget = (budgets.get(first_day.month)/round(30, 2))*range_of_day
-        #     return round(budget, 2)

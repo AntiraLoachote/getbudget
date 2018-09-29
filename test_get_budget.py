@@ -47,4 +47,12 @@ class GetBudgetTest(unittest.TestCase):
         actual = get_budget(first_date, last_date)
         self.assertEqual(actual, 2122.58)
 
+    @unittest.skip(reason='not cover this case')
+    def test_should_return_budget_when_start_mid_month_and_end_2_month_later(self):
+        first_date = date(2018, 9, 15)
+        last_date = date(2018, 11, 30)
+
+        actual = get_budget(first_date, last_date)
+        self.assertEqual(actual, 1300)
+
 unittest.main()
